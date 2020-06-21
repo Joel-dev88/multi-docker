@@ -11,5 +11,4 @@ COPY ./nginx/defaul.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /app/build /usr/share/nginx/html
 
 
-CMD ["npm", "run", "start"]
 
